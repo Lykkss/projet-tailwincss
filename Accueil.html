@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Club Auto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/js/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Placeholder du Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- BANDEAU IMAGE (VISIBLE UNIQUEMENT SUR DESKTOP) -->
+    <div class="hidden md:block w-full h-[700px] relative -mt-20 z-[-10]">
+        <img src="asset/vehicule1.jpg" alt="Bandeau Accueil" class="w-full h-full object-cover object-top">
+    </div>
+
+    <!-- BANDEAU -->
+    <div class="bg-[#232628] text-white py-8 md:py-16 relative flex items-center">
+        <div class="flex flex-col md:flex-row md:items-center space-y-1 md:space-y-0 ml-6 md:ml-52 md:space-x-2">
+            <!-- Partie CLUB AUTO et LE sur la même ligne en mobile -->
+            <div class="flex space-x-2">
+                <p class="text-4xl md:text-5xl font-extrabold uppercase text-white">Club Auto</p>
+                <p class="text-4xl md:text-5xl font-extrabold uppercase text-[#CC6119] inline-block">Le</p>
+            </div>
+            <!-- Partie MEILLEUR DE L'AUTOMOBILE -->
+            <p class="text-4xl md:text-5xl font-extrabold uppercase text-[#CC6119]">Meilleur de</p>
+            <p class="text-4xl md:text-5xl font-extrabold uppercase text-[#CC6119]">l'automobile</p>
+        </div>
+    </div>
+
+    <!-- SECTION IMAGE + TEXTE CENTRÉE -->
+    <section class="container mx-auto py-16 px-6 flex flex-col md:flex-row justify-center items-center gap-6">
+        <!-- Image Carrée -->
+        <div class="w-[400px] h-[400px] flex-1">
+            <img src="asset/clients.jpg" alt="Illustration" class="w-full h-full">
+        </div>
+
+        <!-- Contenu Texte Aligné en hauteur -->
+        <div class="w-[400px] h-[400px] flex-1 flex flex-col justify-start md:self-start text-center md:text-left">
+            <div class="flex mt-4 md:mt-0">
+                <p class="text-4xl md:text-4xl font-extrabold uppercase text-dark">Bienvenue chez </p>
+                <p class="text-4xl md:text-4xl font-extrabold uppercase text-[#CC6119] inline-block">Club Auto</p>
+            </div>
+            <hr class="text-lg text-dark mt-4 font-bold">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. 
+                Nulla facilisi. Donec posuere, quam eget elementum blandit.
+        </hr>
+
+            <p class="text-lg text-dark mt-4 font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. 
+                Nulla facilisi. Donec posuere, quam eget elementum blandit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Esse dolores vero eius veritatis! Quia consectetur voluptatibus provident? A doloremque rerum tenetur ex quos repudiandae, accusantium autem, 
+                error, debitis nesciunt consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic eum corrupti cum atque sed tempora,
+                 nisi possimus dolore, nemo tempore officiis labore.
+            </p>
+        </div>
+    </section>
+
+    <!-- NOUVELLE SECTION IMAGE + TEXTE (IMAGE À DROITE, TEXTE À GAUCHE) -->
+    <section class="container mx-auto py-16 px-6 flex flex-col md:flex-row-reverse justify-center items-center gap-6">
+        <!-- Image Carrée (Maintenant à droite) -->
+        <div class="w-[400px] h-[400px] flex-1">
+            <img src="asset/entretien.jpg" alt="Illustration" class="w-full h-full">
+        </div>
+
+        <!-- Contenu Texte (Maintenant à gauche) -->
+        <div class="w-[400px] h-[400px] flex-1 flex flex-col justify-start md:self-start text-center md:text-left">
+            <div class="flex mt-4 md:mt-0 mb-9">
+                <p class="text-4xl md:text-4xl font-extrabold uppercase text-dark">Le meilleur de l'automobile</p>
+            </div>
+            <hr class="mt-4 mb-9"></hr>
+
+            <p class="text-lg text-dark mt-4 font-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. 
+                Nulla facilisi. Donec posuere, quam eget elementum blandit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Esse dolores vero eius veritatis! Quia consectetur voluptatibus provident? A doloremque rerum tenetur ex quos repudiandae, accusantium autem, 
+                error, debitis nesciunt consectetur. 
+            </p>
+             <!-- Check-list -->
+        <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-lg text-gray-800">
+                <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Lorem ipsum dolor sit amet
+            </li>
+            <li class="flex items-center text-lg text-gray-800">
+                <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Lorem ipsum dolor sit amet
+            </li>
+            <li class="flex items-center text-lg text-gray-800">
+                <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Lorem ipsum dolor sit amet
+            </li>
+            <li class="flex items-center text-lg text-gray-800">
+                <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Lorem ipsum dolor sit amet
+            </li>
+            <li class="flex items-center text-lg text-gray-800">
+                <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Lorem ipsum dolor sit amet
+            </li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- SECTION BLOCS COULEURS AVEC IMAGE DE FOND -->
+    <section class="relative w-full h-full md:h-[450px] flex items-center justify-center overflow-hidden">
+        <!-- Image de fond -->
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="asset/vehicule1.jpg" alt="Background" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Conteneur des blocs -->
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-6xl px-6">
+            <!-- Bloc Jaune -->
+            <div class="bg-[#FAB637] bg-opacity-90 text-black p-8 md:p-16 max-w-xl w-full">
+                <h3 class="text-xl font-bold uppercase">Vous souhaitez louer ?</h3>
+                <p class="mt-2 text-sm text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <!-- Bloc Rouge -->
+            <div class="bg-[#FF4848] bg-opacity-90 text-white p-8 md:p-16 max-w-xl w-full">
+                <h3 class="text-xl font-bold uppercase">Vous souhaitez acheter ?</h3>
+                <p class="mt-2 text-sm text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION VÉHICULES RÉCENTS -->
+    <section class="bg-[#1e1f21] py-16">
+        <div class="container mx-auto px-6">
+            <!-- Titre -->
+            <h2 class="text-white text-4xl font-extrabold uppercase text-center mb-14">Véhicules récents</h2>
+            
+            <!-- Ligne orange étendue -->
+            <div class="w-full h-1 bg-[#CC6119] mt-3 mx-auto mb-14"></div>
+
+        <!-- Liste des véhicules -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <!-- Carte Véhicule 1 -->
+        <div class="overflow-hidden">
+            <!-- Image en haut -->
+            <div class="h-[250px] mb-3">
+                <img src="asset/vehicule2.jpg" alt="BMW 535i" class="w-full h-full">
+            </div>
+            <!-- Partie grise en bas -->
+            <div class="p-4 bg-[#232628] text-white flex flex-col">
+                <!-- Texte + Prix -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-bold uppercase">BMW 535i, Navi, Leather, ABS</p>
+                        <p class="font-bold uppercase">Leather, ABS</p>
+                    </div>
+                    <span class="bg-blue-500 text-white text-lg font-bold px-4 py-1">5 500 €</span>
+                </div>
+                <!-- Ligne de séparation sous le bouton et le titre -->
+                <hr class="border-t-1 border-gray-500 mt-4 mb-4">
+            </div>  
+        </div>
+
+        <!-- Carte Véhicule 2 -->
+        <div class="overflow-hidden hidden md:block">
+            <div class="h-[250px] mb-3">
+                <img src="asset/vehicule2.jpg" alt="BMW 328i" class="w-full h-full">
+            </div>
+            <div class="p-4 bg-[#232628] text-white flex flex-col">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-bold uppercase">BMW 328i, Sport Line Body Kit</p>
+                        <p class="font-bold uppercase">Leather, ABS</p>
+                    </div>
+                    <span class="bg-blue-500 text-white text-lg font-bold px-4 py-1">8 000 €</span>
+                </div>
+                <hr class="border-t-1 border-gray-500 mt-4 mb-4">
+            </div>  
+        </div>
+
+        <!-- Carte Véhicule 3 -->
+        <div class="overflow-hidden hidden md:block">
+            <div class="h-[250px] mb-3">
+                <img src="asset/vehicule2.jpg" alt="Ford Explorer" class="w-full h-full">
+            </div>
+            <div class="p-4 bg-[#232628] text-white flex flex-col">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-bold uppercase">Ford Explorer 2015 4WD</p>
+                        <p class="font-bold uppercase">Leather, ABS</p>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <span class="text-gray-400 line-through text-sm">9 000 €</span>
+                        <span class="bg-blue-500 text-white text-lg font-bold px-4 py-1">8 200 €</span>
+                    </div>
+                </div>
+                <hr class="border-t-1 border-gray-500 mt-4 mb-3">
+            </div>  
+        </div>
+    </div>      
+</div>
+</section>
+<!-- SECTION "Pourquoi nous choisir ?" -->
+<section class="container mx-auto py-16 px-6 text-center">
+    <!-- Titre -->
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-10">
+        Pourquoi nous choisir ?
+    </h2>
+
+    <!-- Conteneur des blocs -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-700">
+        <!-- Bloc 1 -->
+        <div class="flex flex-row items-start text-left gap-4">
+            <img src="asset/icon1.png" alt="Financement" class="w-12 h-12">
+            <div>
+                <h3 class="text-lg font-bold uppercase">Financement</h3>
+                <p class="text-sm mt-2 max-w-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloc 2 -->
+        <div class="flex flex-row items-start text-left gap-4">
+            <img src="asset/icon2.png" alt="Réactivité" class="w-12 h-12">
+            <div>
+                <h3 class="text-lg font-bold uppercase">Réactivité de l'équipe technique</h3>
+                <p class="text-sm mt-2 max-w-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloc 3 -->
+        <div class="flex flex-row items-start text-left gap-4">
+            <img src="asset/icon3.png" alt="Écoute Client" class="w-12 h-12">
+            <div>
+                <h3 class="text-lg font-bold uppercase">À l'écoute de notre clientèle</h3>
+                <p class="text-sm mt-2 max-w-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bloc 4 -->
+        <div class="flex flex-row items-start text-left gap-4">
+            <img src="asset/icon4.png" alt="Service" class="w-12 h-12">
+            <div>
+                <h3 class="text-lg font-bold uppercase">Service & Maintenance</h3>
+                <p class="text-sm mt-2 max-w-xs">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bouton Contact -->
+    <div class="mt-10">
+        <a href="#" class="bg-blue-500 text-white text-lg font-bold px-6 py-3 hover:bg-blue-600 transition">
+            Contactez-nous
+        </a>
+    </div>
+</section>
+
+ <!-- SECTION BLOCS COULEURS AVEC IMAGE DE FOND -->
+ <section class="relative w-full h-full md:h-[450px] flex items-center justify-center overflow-hidden">
+    <!-- Image de fond -->
+    <div class="absolute top-0 left-0 w-full h-full">
+        <img src="asset/vehicule3.jpg" alt="Background" class="w-full h-full object-cover">
+    </div>
+
+    <!-- Conteneur des blocs -->
+    <div class="relative z-10 flex flex-col md:flex-row items-center justify-start gap-6 w-full max-w-6xl px-6">
+        <!-- Bloc Jaune -->
+        <div class="bg-[#FAB637] bg-opacity-90 justify-start text-black p-8 md:p-16 max-w-xl w-full">
+            <div class="leading-tight ml-2">
+                <p class="text-4xl uppercase text-dark font-bold">Club Auto</p>
+                <p class="text-4xl uppercase text-white font-bold">ventes et location</p>
+            </div>
+            <p class="mt-2 text-sm text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+</body>
+</html>

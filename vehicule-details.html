@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Club Auto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="src/js/script.js" defer></script>
+    <script>
+        function openTab(tabName) {
+            // Masquer tous les onglets
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.add('hidden'));
+
+            // Réinitialiser tous les boutons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('bg-white', 'text-black', 'border-t-4', 'border-[#CC6119]');
+                button.classList.add('bg-gray-900', 'text-gray-400');
+            });
+
+            // Afficher l'onglet actif
+            document.getElementById(tabName).classList.remove('hidden');
+
+            // Modifier l'apparence du bouton actif
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('bg-white', 'text-black', 'border-t-4', 'border-[#CC6119]');
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Placeholder du Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Conteneur principal -->
+    <div class="container mx-auto px-6 mt-8">
+
+        <!-- Breadcrumb Navigation -->
+        <div class="mt-6">
+            <nav class="text-gray-500 text-sm flex items-center space-x-2">
+                <a href="#" class="hover:text-gray-700">Accueil</a>
+                <span>/</span>
+                <a href="#" class="hover:text-gray-700">Vente</a>
+                <span>/</span>
+                <span class="text-gray-700 font-bold">BMW 535i, Navi, Leather, ABS</span>
+            </nav>
+            <hr class="border-t border-gray-300 mt-3">
+        </div>
+
+        <!-- Titre du véhicule -->
+        <h2 class="text-3xl font-extrabold text-gray-900 mt-4">BMW 535i, Navi, Leather, ABS</h2>
+
+        <!-- Image du véhicule (Garde la taille d'origine) -->
+        <div class="mt-6 flex justify-start">
+            <img src="asset/vehicule2.jpg" alt="BMW 535i" class="w-1/2 md:w-1/2 h-[500px] object-cover">
+        </div>
+
+        <!-- Section Onglets + Contenu -->
+        <div class="mt-10 justify-start max-w-3xl">
+            <!-- Barre des onglets (horizontal sur desktop, vertical sur mobile) -->
+            <div class="bg-[#232628] flex flex-col md:flex-row w-full md:w-auto">
+                <button data-tab="tab1" class="tab-button bg-white text-black border-t-4 md:border-t-4 border-[#CC6119] px-6 py-3 font-bold uppercase md:flex-1" onclick="openTab('tab1')">Description</button>
+                <button data-tab="tab2" class="tab-button bg-gray-900 text-gray-400 px-6 py-3 font-bold uppercase md:flex-1" onclick="openTab('tab2')">Technique</button>
+                <button data-tab="tab3" class="tab-button bg-gray-900 text-gray-400 px-6 py-3 font-bold uppercase md:flex-1" onclick="openTab('tab3')">Options</button>
+                <button data-tab="tab4" class="tab-button bg-gray-900 text-gray-400 px-6 py-3 font-bold uppercase md:flex-1" onclick="openTab('tab4')">Contact</button>
+            </div>
+        
+            <!-- Contenu des onglets -->
+            <div class="bg-gray-100 p-6">
+                <!-- Onglet 1 (Description) -->
+                <div id="tab1" class="tab-content">
+                    <p class="text-gray-900 text-lg font-semibold">
+                        Quisque imperdiet dignissim enim dictum finibus. Sed consectetur convallis enim eget laoreet.
+                        Aenean vitae nisl mollis, porta risus vel, dapibus lectus. Etiam ac suscipit eros, eget maximus.
+                    </p>
+
+                    <p class="text-gray-700 text-lg mt-4 leading-relaxed">
+                        Etiam sit amet ex pharetra, venenatis ante vehicula, gravida sapien. Fusce eleifend vulputate nibh, 
+                        non cursus augue placerat pellentesque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Aliquid voluptate ut autem aspernatur, ipsam praesentium. Autem reprehenderit saepe error voluptatum dolores non blanditiis? 
+                        Est maxime blanditiis consequatur quasi cupiditate quia?
+                    </p>
+
+                    <!-- Citation en italique -->
+                    <blockquote class="mt-6 border-l-4 border-[#CC6119] italic text-gray-600 pl-4 py-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </blockquote>
+
+                    <!-- Liste des options -->
+                    <h3 class="text-xl font-bold uppercase mt-6">Options</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-center text-lg text-gray-700">
+                            <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Lorem ipsum dolor sit amet
+                        </li>
+                        <li class="flex items-center text-lg text-gray-700">
+                            <svg class="w-6 h-6 text-[#CC6119] mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Lorem ipsum dolor sit amet
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Onglet 2 -->
+                <div id="tab2" class="tab-content hidden">
+                    <p class="text-gray-700 text-lg">
+                        Détails techniques : Moteur V6, transmission automatique, consommation 8L/100km.
+                    </p>
+                </div>
+
+                <!-- Onglet 3 -->
+                <div id="tab3" class="tab-content hidden">
+                    <p class="text-gray-700 text-lg">
+                        Sièges en cuir, caméra de recul, système audio premium.
+                    </p>
+                </div>
+
+                <!-- Onglet 4 -->
+                <div id="tab4" class="tab-content hidden">
+                    <p class="text-gray-700 text-lg">
+                        Contactez-nous au <strong>01 23 45 67 89</strong> ou envoyez un email à <a href="mailto:contact@clubauto.com" class="text-blue-600 underline">contact@clubauto.com</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Placeholder du Footer -->
+    <div id="footer-placeholder"></div>
+
+</body>
+</html>

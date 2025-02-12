@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Auto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="bg-[#232628] text-white py-6 relative">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-12">
+            
+            <div class="w-full flex justify-end md:hidden">
+                <!-- Titre caché sur mobile -->
+                <h1 class="hidden">CLUB AUTO</h1>
+
+                <!-- Bouton Menu Burger (Aligné à droite) -->
+                <button class="text-white focus:outline-none order-2" onclick="toggleMenu()">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- LOGO + INFOS (Visible uniquement sur Desktop) -->
+            <div class="hidden md:flex items-center space-x-12">
+                <h1 class="text-5xl font-extrabold">CLUB AUTO</h1>
+
+                <!-- ICÔNE + ADRESSE -->
+                <div class="flex items-center space-x-2">
+                    <img src="./asset/icone-adresse.png" alt="Adresse" class="w-10 h-10">
+                    <div class="leading-tight">
+                        <p class="text-xs uppercase text-[#CC6119] font-bold">Adresse :</p>
+                        <p class="text-sm uppercase text-white font-extralight">Avenue Charles de Gaulle</p>
+                        <p class="text-sm uppercase text-white font-extralight">75008 Paris</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ICÔNE + TÉLÉPHONE (En bas à droite sur mobile) -->
+            <div class="w-full flex md:w-auto md:flex items-center justify-start mt-4 md:mt-0">
+                <img src="./asset/icon-telephone.png" alt="Téléphone" class="w-10 h-10">
+                <div class="leading-tight ml-2">
+                    <p class="text-xs uppercase text-[#CC6119] font-bold">Téléphone :</p>
+                    <p class="text-lg uppercase text-white font-bold">01 23 45 67 89</p>
+                </div>
+            </div>
+
+            <!-- OUVERTURE + HORAIRE (Visible uniquement sur Desktop) -->
+            <div class="hidden md:flex flex-col">
+                <div class="flex items-center space-x-2">
+                    <p class="text-sm uppercase text-[#CC6119] font-bold">Ouverture :</p>
+                    <p class="text-sm uppercase text-white font-bold">Du Lundi au Samedi</p>
+                </div>
+                <div class="flex items-center space-x-2 mt-1">
+                    <p class="text-sm uppercase text-[#CC6119] font-bold">Horaire :</p>
+                    <p class="text-sm uppercase text-white font-bold">De 9h à 17h</p>
+                </div>
+            </div>
+
+            <!-- ICÔNES RÉSEAUX SOCIAUX (Masqué sur mobile) -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-white hover:text-orange-500">
+                    <svg class="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5 3.66 9.13 8.44 9.93v-7.03H7.89V12h2.55V9.66c0-2.52 1.49-3.9 3.77-3.9 1.09 0 2.23.2 2.23.2v2.43h-1.25c-1.23 0-1.62.76-1.62 1.54V12h2.77l-.44 2.97h-2.33v7.03c4.78-.8 8.44-4.93 8.44-9.93z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+      <!-- NAVBAR BLANCHE (Visible sur Desktop, cachée sur Mobile) -->
+      <nav class="bg-white bg-opacity-50 backdrop-blur-md shadow-md relative z-20 hidden md:block">
+        <div class="container mx-auto flex justify-end items-center px-6 md:px-12">
+            <div class="flex space-x-4">
+                <a href="./Accueil.html" class="text-gray-800 font-semibold uppercase px-4 py-2 hover:bg-[#CC6119] hover:text-white transition duration-300">Accueil</a>
+                <a href="./vehicule-details.html" class="text-gray-800 font-semibold uppercase px-4 py-2 hover:bg-[#CC6119] hover:text-white transition duration-300">Vente</a>
+                <a href="#" class="text-gray-800 font-semibold uppercase px-4 py-2 hover:bg-[#CC6119] hover:text-white transition duration-300">Location</a>
+                <a href="./Contact.html" class="text-gray-800 font-semibold uppercase px-4 py-2 hover:bg-[#CC6119] hover:text-white transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+     <!-- MENU MOBILE -->
+     <div id="mobile-menu" class="hidden md:hidden bg-[#232628] absolute top-16 left-0 w-full shadow-md">
+        <a href="./Accueil.html" class="block py-3 px-6 hover:bg-[#CC6119] text-white">Accueil</a>
+        <a href="./vehicule-details.html" class="block py-3 px-6 hover:bg-[#CC6119] text-white">Vente</a>
+        <a href="#" class="block py-3 px-6 hover:bg-[#CC6119] text-white">Location</a>
+        <a href="./Contact.html" class="block py-3 px-6 hover:bg-[#CC6119] text-white">Contact</a>
+    </div>
+    
+
+</body>
+</html>
